@@ -5,7 +5,7 @@ import emoji from '../../images/articles/success.png';
 
 const Portfolio = () => {
     return (
-        <article>
+        <article id="portfolio">
         <div class="section_title" id="portfolio">
             <div class="palette_title">
             <img className="palette" src={palette} alt="palette" />

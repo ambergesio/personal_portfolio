@@ -16,8 +16,8 @@ const Header = () => {
             <section className="hero">
 
                 <nav>
-                    <Item img={portfolio} title="about me" route="" />
-                    <Item img={portfolio} title="portfolio" route="" />
+                    <Item img={portfolio} title="about me" route="#aboutme" />
+                    <Item img={portfolio} title="portfolio" route="#portfolio" />
                     <Item img={github} title="github" route="" />
                     <Item img={linkedin} title="Linkedin" route="" />
                     <Item img={contact} title="Contact" route="" />
@@ -27,8 +27,8 @@ const Header = () => {
                     <div className="menu_hamb"></div>
                 </div>
                 <div className={!open ? "mobile_nav closed" : "mobile_nav open"}>
-                    <Item img={portfolio} title="about me" route="" />
-                    <Item img={portfolio} title="portfolio" route="" />
+                    <Item img={portfolio} title="about me" route="#aboutme" />
+                    <Item img={portfolio} title="portfolio" route="#portfolio" />
                     <Item img={github} title="github" route="" />
                     <Item img={linkedin} title="Linkedin" route="" />
                     <Item img={contact} title="Contact" route="" />

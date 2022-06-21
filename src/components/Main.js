@@ -7,8 +7,8 @@ import './compstyles/style.scss';
 const Main = () => {
     return (
         <main>
-            <div class="vertical_line"></div>
-            <div class="main_content">
+            <div className="vertical_line"></div>
+            <div className="main_content">
                 <About />
                 <Tech />
                 <Portfolio />

@@ -28,26 +28,26 @@ const Tech = () => {
                 <div className="green ball"></div>
             </div>
             <code>
-                <b class="hilight">JavaScript everywhere!</b> Yes!.
+                <b className="hilight">JavaScript everywhere!</b> Yes!.
             </code>
             <code>
-                After a broken heart and many years of mourning Flash/ActionScript, I felt in love again. This time, the object of my love was <b class="hilight">JavaScript</b>.
+                After a broken heart and many years of mourning Flash/ActionScript, I felt in love again. This time, the object of my love was <b className="hilight">JavaScript</b>.
             </code>
             <code>
-                I discovered a whole new world of technologies like <b class="hilight">Node, Express, React, and Mongo</b> which are all JavaScript based.
+                I discovered a whole new world of technologies like <b className="hilight">Node, Express, React, and Mongo</b> which are all JavaScript based.
             </code>
             <code></code>
             <code>
                 I am proficient in these technologies:
             </code>
         </div>
-        <div class="tech_card">
-            <img class="techs" src={html} alt="html5" title="html5" />
-            <img class="techs" src={css} alt="css" title="css" />
-            <img class="techs" src={js} alt="js" title="javascript" />
-            <img class="techs" src={reactimg} alt="react" title="React.js" />
-            <img class="techs" src={node} alt="node" title="Node.js" />
-            <img class="techs" src={mongo} alt="mongo" title="Mongo db" />
+        <div className="tech_card">
+            <img className="techs" src={html} alt="html5" title="html5" />
+            <img className="techs" src={css} alt="css" title="css" />
+            <img className="techs" src={js} alt="js" title="javascript" />
+            <img className="techs" src={reactimg} alt="react" title="React.js" />
+            <img className="techs" src={node} alt="node" title="Node.js" />
+            <img className="techs" src={mongo} alt="mongo" title="Mongo db" />
         </div>
     </article>
     );

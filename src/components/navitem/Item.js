@@ -1,3 +1,5 @@
+import './style.scss';
+
 const Item = ({ img, title, route }) => {
 
     return (

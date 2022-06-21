@@ -1,21 +1,22 @@
 import React from 'react';
-import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
 import Header from './components/header';
 import Main from './components/Main';
 
+import Contact from './components/contact';
+import Footer from './components/footer';
+
 import './styles/index.scss';
 
 
-
-function App() {
+const App = () => {
   return (
-    <BrowserRouter>
+    <>
       <Header />
-      <Routes>
-        <Route exact path='/' element={<Main />} />  
-      </Routes>
-    </BrowserRouter>
+      <Main />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 

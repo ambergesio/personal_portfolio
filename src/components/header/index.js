@@ -5,7 +5,6 @@ import linkedin from '../../images/nav/linkedin.svg';
 import contact from '../../images/nav/contact.svg';
 import mac from '../../images/hero/mac.png';
 import Item from '../navitem/Item';
-import Hitem from '../navitem/Hitem';
 import './style.scss';
 
 
@@ -16,23 +15,27 @@ const Header = () => {
     return (
             <section className="hero">
 
-                <nav>
-                    <Item img={portfolio} title="about me" route="#aboutme" />
-                    <Item img={portfolio} title="portfolio" route="#portfolio" />
-                    <Item img={github} title="github" route="" />
-                    <Item img={linkedin} title="Linkedin" route="" />
-                    <Item img={contact} title="Contact" route="#contact" />
-                </nav>
+                <div className="nav_container">
+                    <nav>
+                        <Item img={portfolio} title="about me" route="#aboutme" />
+                        <Item img={portfolio} title="technologies" route="#technologies" />
+                        <Item img={portfolio} title="portfolio" route="#portfolio" />
+                        <Item img={github} title="github" route="https://github.com/ambergesio" target="_blank"/>
+                        <Item img={linkedin} title="Linkedin" route="https://www.linkedin.com/in/abel-martin-bergesio-42819820a/" target="_blank"/>
+                        <Item img={contact} title="Contact" route="#contact" />
+                    </nav>
+                </div>
 
                 <div onClick={ () => {setOpen(!open)}} className={!open ? "menuButton" : "menuButton on"}>
                     <div className="menu_hamb"></div>
                 </div>
                 <div className={!open ? "mobile_nav closed" : "mobile_nav open"}>
-                    <Hitem img={portfolio} title="about me" route="#aboutme" />
-                    <Hitem img={portfolio} title="portfolio" route="#portfolio" />
-                    <Hitem img={github} title="github" route="" />
-                    <Hitem img={linkedin} title="Linkedin" route="" />
-                    <Hitem img={contact} title="Contact" route="#contact" />
+                    <Item img={portfolio} title="about me" route="#aboutme" />
+                    <Item img={portfolio} title="technologies" route="#technologies" />
+                    <Item img={portfolio} title="portfolio" route="#portfolio" />
+                    <Item img={github} title="github" route="https://github.com/ambergesio" target="_blank"/>
+                    <Item img={linkedin} title="Linkedin" route="https://www.linkedin.com/in/abel-martin-bergesio-42819820a/" target="_blank"/>
+                    <Item img={contact} title="Contact" route="#contact" />
                 </div>
 
 

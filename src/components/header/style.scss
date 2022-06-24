@@ -6,10 +6,15 @@
     background: linear-gradient(145deg, #6B1B76 0%, #0a245e 15%,#081332 45%, #050b1b 85%, #063495 100%);
 }
 
+.nav_container {
+    width: 100%;
+    height: 96px;
+}
+
 
 /* *** NAVIGATION *** */
+
 nav {
-    // display: visible;
     visibility: visible;
     padding: 30px 0;
     display: flex;
@@ -19,14 +24,11 @@ nav {
     gap: 16px;
 
     @media only screen and (max-width: 768px) {
-        // display: none;
-        visibility: hidden;
+        display: none;
     }
 }
-
-
-
 /* ***  NAVIGATION END *** */
+
 
 
 /* *** MOBILE MENU *** */

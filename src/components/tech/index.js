@@ -12,7 +12,7 @@ import mongo from '../../images/techs/mongo.svg';
 
 const Tech = () => {
     return (
-        <article id="aboutme">
+        <article id="technologies">
         <div className="section_title">
             <div className="palette_title">
                 <img className="palette" src={palette} alt="palette" />

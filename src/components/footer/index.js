@@ -16,9 +16,10 @@ const Footer = () => {
             </div>
             <nav>
                 <Item img={portfolio} title="about me" route="#aboutme" />
+                <Item img={portfolio} title="technologies" route="#technologies" />
                 <Item img={portfolio} title="portfolio" route="#portfolio" />
-                <Item img={github} title="github" route="" />
-                <Item img={linkedin} title="Linkedin" route="" />
+                <Item img={github} title="github" route="https://github.com/ambergesio" target="_blank"/>
+                <Item img={linkedin} title="Linkedin" route="https://www.linkedin.com/in/abel-martin-bergesio-42819820a/" target="_blank"/>
                 <Item img={contact} title="Contact" route="#contact" />
             </nav>
         </div>

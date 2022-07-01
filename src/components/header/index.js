@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import about from '../../images/nav/about.svg';
+import techs from '../../images/nav/techs.svg';
 import portfolio from '../../images/nav/portfolio.svg';
 import github from '../../images/nav/github.svg';
 import linkedin from '../../images/nav/linkedin.svg';
@@ -17,8 +19,8 @@ const Header = () => {
 
                 <div className="nav_container">
                     <nav>
-                        <Item img={portfolio} title="about me" route="#aboutme" />
-                        <Item img={portfolio} title="technologies" route="#technologies" />
+                        <Item img={about} title="about me" route="#aboutme" />
+                        <Item img={techs} title="technologies" route="#technologies" />
                         <Item img={portfolio} title="portfolio" route="#portfolio" />
                         <Item img={github} title="github" route="https://github.com/ambergesio" target="_blank"/>
                         <Item img={linkedin} title="Linkedin" route="https://www.linkedin.com/in/abel-martin-bergesio-42819820a/" target="_blank"/>
@@ -30,8 +32,8 @@ const Header = () => {
                     <div className="menu_hamb"></div>
                 </div>
                 <div className={!open ? "mobile_nav closed" : "mobile_nav open"}>
-                    <Item img={portfolio} title="about me" route="#aboutme" />
-                    <Item img={portfolio} title="technologies" route="#technologies" />
+                    <Item img={about} title="about me" route="#aboutme" />
+                    <Item img={techs} title="technologies" route="#technologies" />
                     <Item img={portfolio} title="portfolio" route="#portfolio" />
                     <Item img={github} title="github" route="https://github.com/ambergesio" target="_blank"/>
                     <Item img={linkedin} title="Linkedin" route="https://www.linkedin.com/in/abel-martin-bergesio-42819820a/" target="_blank"/>

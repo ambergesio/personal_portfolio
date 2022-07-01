@@ -22,7 +22,7 @@ const Portfolio = () => {
                 <div className="green ball"></div>
             </div>
             <code>
-                <b className="hilight">Proyect nº1</b>
+                <b className="hilight">Project nº1</b>
             </code>
             <code>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <b className="hilight">JavaScript</b>.
@@ -39,7 +39,7 @@ const Portfolio = () => {
                 <div className="green ball"></div>
             </div>
             <code>
-                <b className="hilight">Proyect nº2</b>
+                <b className="hilight">Project nº2</b>
             </code>
             <code>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <b className="hilight">JavaScript</b>.

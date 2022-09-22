@@ -19,12 +19,12 @@ const Header = () => {
 
                 <div className="nav_container">
                     <nav>
-                        <Item img={about} title="about me" route="#aboutme" />
-                        <Item img={techs} title="technologies" route="#technologies" />
+                        <Item img={about} title="sobre mi" route="#aboutme" />
+                        <Item img={techs} title="tecnologías" route="#technologies" />
                         <Item img={portfolio} title="portfolio" route="#portfolio" />
                         <Item img={github} title="github" route="https://github.com/ambergesio" target="_blank"/>
                         <Item img={linkedin} title="Linkedin" route="https://www.linkedin.com/in/abel-martin-bergesio-42819820a/" target="_blank"/>
-                        <Item img={contact} title="Contact" route="#contact" />
+                        <Item img={contact} title="Contacto" route="#contact" />
                     </nav>
                 </div>
 
@@ -32,12 +32,12 @@ const Header = () => {
                     <div className="menu_hamb"></div>
                 </div>
                 <div className={!open ? "mobile_nav closed" : "mobile_nav open"}>
-                    <Item img={about} title="about me" route="#aboutme" />
-                    <Item img={techs} title="technologies" route="#technologies" />
+                    <Item img={about} title="sobre mi" route="#aboutme" />
+                    <Item img={techs} title="tecnologías" route="#technologies" />
                     <Item img={portfolio} title="portfolio" route="#portfolio" />
                     <Item img={github} title="github" route="https://github.com/ambergesio" target="_blank"/>
                     <Item img={linkedin} title="Linkedin" route="https://www.linkedin.com/in/abel-martin-bergesio-42819820a/" target="_blank"/>
-                    <Item img={contact} title="Contact" route="#contact" />
+                    <Item img={contact} title="Contacto" route="#contact" />
                 </div>
 
 
@@ -49,12 +49,12 @@ const Header = () => {
                         </div>
                         <div className="drop_title">
                             <div className="drop_border">
-                                <p className="drop">Fullstack MERN / Graphic Designer</p>
+                                <p className="drop">Fullstack MERN / Diseñador gráfico</p>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <img className="hero_img" src={mac} alt="just me" />
+                        <img className="hero_img" src={mac} alt="Abel Martín Bergesio" title="Abel Martín Bergesio" />
                     </div>
                 </div>
             </section>

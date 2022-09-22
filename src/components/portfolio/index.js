@@ -2,6 +2,7 @@ import React from 'react';
 import palette from '../../images/assets/palette.svg';
 import arrow from '../../images/assets/arrow.svg';
 import emoji from '../../images/articles/success.png';
+import github from '../../images/nav/github.svg';
 
 const Portfolio = () => {
     return (
@@ -15,23 +16,36 @@ const Portfolio = () => {
             </div>
         </div>
 
+
         <div className="card">
             <div className="balls">
                 <div className="red ball"></div>
                 <div className="yellow ball"></div>
                 <div className="green ball"></div>
             </div>
+            <div className="proyect_subtitle">Mununuras e-commerce</div>
             <code>
-                <b className="hilight">Project nº1</b>
+                Este proyecto es una tienda virtual para un emprendimiento familiar de juguetes tejidos al crochet para bebés y niños.
             </code>
             <code>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <b className="hilight">JavaScript</b>.
+                Consta de un cliente desarrollado en <b className="hilight">React</b> y una apiREST con <b className="hilight">node/express</b> y <b className="hilight">mongoDB atlas</b> para persistir productos, carritos, usuarios, órdenes de compra y notificaciones de pago. Posee integración de <b className="hilight">MercadoPago</b> (modo prueba) para que la experiencia de compra sea óptima sin salir del sitio.
             </code>
-            <code>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, <b className="hilight">Node, Express, React, and Mongo</b>
-            </code>
-            <div className="techno_icons"></div>
+            <div className="proyect">
+                <div className="proyect_block">
+                    <a className="linkproyecto" href="https://mununuras.up.railway.app" rel="noreferrer" target="_blank">
+                    ver tienda online
+                    </a>
+                </div>
+                <div className="proyect_block">
+                    <a className="linkproyecto" href="https://github.com/ambergesio/mununuras-e-shop" rel="noreferrer" target="_blank">
+                        <img className="project_icon" src={github} alt="mununuras github" />
+                        <p>github repo</p>
+                    </a>
+                </div>
+            </div>
         </div>
+
+
         <div className="card">
             <div className="balls">
                 <div className="red ball"></div>
@@ -39,13 +53,14 @@ const Portfolio = () => {
                 <div className="green ball"></div>
             </div>
             <code>
-                <b className="hilight">Project nº2</b>
+                <b className="hilight">Coming soon...</b>
+            </code>
+            <div className="proyect_subtitle">Disney Plus clone</div>
+            <code>
+                Clone del sitio de Disney plus desarrollado con <b className="hilight">Next.js, Node/Express, Sass y Mysql.</b>
             </code>
             <code>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <b className="hilight">JavaScript</b>.
-            </code>
-            <code>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, <b className="hilight">Node, Express, React, and Mongo</b>
+                Login y registro de usuario. Películas y series con sus personajes.
             </code>
         </div>
 

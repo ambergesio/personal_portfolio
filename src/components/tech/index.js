@@ -9,6 +9,9 @@ import js from '../../images/techs/js.svg';
 import reactimg from '../../images/techs/react.svg';
 import node from '../../images/techs/node.svg';
 import mongo from '../../images/techs/mongo.svg';
+import mysql from '../../images/techs/mysql.svg';
+import next from '../../images/techs/next.svg';
+import sass from '../../images/techs/sass.svg';
 
 const Tech = () => {
     return (
@@ -17,7 +20,7 @@ const Tech = () => {
             <div className="palette_title">
                 <img className="palette" src={palette} alt="palette" />
                 <img className="arrow" src={arrow} alt="arrow" />
-                <p className="subtitle">Tecnologies</p>
+                <p className="subtitle">Tecnologías</p>
                 <img className="title_ilustration" src={emoji} alt="technologies" />
             </div>
         </div>
@@ -28,26 +31,42 @@ const Tech = () => {
                 <div className="green ball"></div>
             </div>
             <code>
-                <b className="hilight">JavaScript everywhere!</b> Yes!.
+                <p>
+                    <b className="hilight">JavaScript</b> everywhere!
+                </p>
             </code>
             <code>
-                After a broken heart and many years of mourning Flash/ActionScript, I felt in love again. This time, the object of my love was <b className="hilight">JavaScript</b>.
+                <p>
+                    Luego de la muerte de <b className="hilight">Flash/Actionscrip</b> y la famosa carta de Jobs en 2010, a medida que actionscript dejó de ser soportado, puse el desarrollo
+                    multimedia en stand-by para dedicarme exclusivamente al diseño.
+                </p>
             </code>
             <code>
-                I discovered a whole new world of technologies like <b className="hilight">Node, Express, React, and Mongo</b> which are all JavaScript based.
+                <p>        
+                    Años más tarde retomé el desarrollo eligiendo javascript como herramienta central.
+                </p>
             </code>
-            <code></code>
             <code>
-                I am proficient in these technologies:
+                En esta nueva etapa descubrí nuevas tecnologías como <b className="hilight">Node, Express, React </b>
+                y <b className="hilight">Mongo</b>, todas basadas en ese lenguaje.
+            </code>
+            <code>
+                Además profundicé mis conocimientos en html5 y css3
+            </code>
+            <code>
+                Éstas son algunas de las tecnologías que manejo:
             </code>
         </div>
         <div className="tech_card">
             <img className="techs" src={html} alt="html5" title="html5" />
-            <img className="techs" src={css} alt="css" title="css" />
-            <img className="techs" src={js} alt="js" title="javascript" />
-            <img className="techs" src={reactimg} alt="react" title="React.js" />
-            <img className="techs" src={node} alt="node" title="Node.js" />
-            <img className="techs" src={mongo} alt="mongo" title="Mongo db" />
+            <img className="techs" src={css} alt="css3" title="css3" />
+            <img className="techs" src={js} alt="javascript" title="javascript" />
+            <img className="techs" src={reactimg} alt="React.js" title="React.js" />
+            <img className="techs" src={node} alt="Node.js" title="Node.js" />
+            <img className="techs" src={mongo} alt="Mongo db" title="Mongo db" />
+            <img className="techs" src={mysql} alt="Mysql" title="MySql" />
+            <img className="techs" src={next} alt="Next.js" title="Next.js" />
+            <img className="techs" src={sass} alt="Sass" title="Sass" />
         </div>
     </article>
     );

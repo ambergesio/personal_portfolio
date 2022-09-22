@@ -6,34 +6,67 @@ import emoji from '../../images/articles/waving.png';
 const About = () => {
     return (
         <article id="aboutme">
-        <div className="section_title">
-            <div className="palette_title">
-                <img className="palette" src={palette} alt="palette" />
-                <img className="arrow" src={arrow} alt="arrow" />
-                <p className="subtitle">About me</p>
-                <img className="title_ilustration" src={emoji} alt="about me" />
+            <div className="section_title">
+                <div className="palette_title">
+                    <img className="palette" src={palette} alt="palette" />
+                    <img className="arrow" src={arrow} alt="arrow" />
+                    <p className="subtitle">Sobre mi</p>
+                    <img className="title_ilustration" src={emoji} alt="about me" />
+                </div>
             </div>
-        </div>
-        <div className="card">
-            <div className="balls">
-                <div className="red ball"></div>
-                <div className="yellow ball"></div>
-                <div className="green ball"></div>
+            <div className="card">
+                <div className="balls">
+                    <div className="red ball"></div>
+                    <div className="yellow ball"></div>
+                    <div className="green ball"></div>
+                </div>
+                <div className="section_subtitle">Perfil</div>
+                <code>
+                    <p>
+                        Profesional del <b className="hilight">diseño gráfico </b>
+                        con mas de 20 años de experiencia y <b className="hilight">
+                        desarrollador javascript fullstack MERN</b> ((M)ongoDB/(M)ySql, (E)xpress, (R)eact/next, (N)ode.)
+                    </p>
+                </code>
+                <div className="section_subtitle">Armada Argentina</div>
+                <code>
+                    <p>
+                        Desde 2005 me desempeño como
+                        <b className="hilight"> diseñador gráfico </b>
+                        en Gaceta Marinera, que pertenece al Departamento de Comunicación de la Secretaría
+                        General Naval de la Armada Argentina. Allí comencé desarrollando producciones
+                        multimediales en <b className="hilight"> Actionscript </b>
+                        y realizando diseño editorial.
+                    </p>
+                    <p>
+                        Actualmente me encargo del diseño de las infografías para la revista "Gaceta Marinera"
+                        ademas de otras tareas, tales como animaciones en After Effects, diseños y desarrollos para la web 
+                        y colaboraciones para distintas áres de la Armada.
+                    </p>
+                </code>
+                <div className="section_subtitle">Dirección de Cultura</div>
+                <code>
+                    Entre 2003 y 2011 trabajé para la<b className="hilight"> Dirección de Cultura de Coronel Rosales </b>
+                    donde me desempeñé como diseñador y desarrollador web encargándome de la cartelera cultural online de dicha dirección (html, css, actionscript, jquery). 
+                </code>
+                <div className="section_subtitle">Mis comienzos...</div>
+                <code>
+                    Inicié mis estudios de diseño en 1997 y dí mis primeros pasos en el desarrollo con ActionScript allá por el año 1999. Eran días de la web 1.0.
+
+                </code>
+                <div className="section_subtitle">Front, back.... fullstack?</div>
+                <code>
+                    <p>
+                        Amo tanto el <b className="hilight">frontend</b> como el <b className="hilight">backend</b>!.
+                    </p>
+                    <p>
+                        Ser diseñador y animador, sumado a las skills
+                        de desarrollo fullstack, me dan la capacidad de crear aplicaciones web de punta a punta,
+                        desde la concepción misma de la UI/UX, hasta la programación, desarrollo y deployment.
+                    </p>
+                </code>
             </div>
-            <code>
-                Hi!. My name is Abel Martin, but everybody knows me as "Bones". I'm a <b className="hilight">graphic designer</b> and a <b className="hilight">MERN Stack developer.</b> (MERN stands for (M)ongoDB, (E)xpress, (R)eact, and (N)ode.
-            </code>
-            <code>
-                As a <b className="hilight">graphic designer</b>, I'm currently working at the Press Office of the Argentine Navy. I started in 2005. I am in <b className="hilight">charge of the infographics department</b> and also do editorial design.
-            </code>
-            <code>
-                I’ve been designing since 1997 and developing in ActionScript since 1999. After flash was killed, I put development aside and dedicated full time to graphic design. <b className="hilight">Almost two years ago</b> I started learning how to work with technologies such as <b className="hilight">react, mongo, and express/node</b>.
-            </code>
-            <code>
-                I love both <b className="hilight">frontend</b> and <b className="hilight">backend</b>.
-            </code>
-        </div>
-    </article>
+        </article>
     );
 }
 

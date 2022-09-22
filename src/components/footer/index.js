@@ -17,12 +17,12 @@ const Footer = () => {
                 <p>Abel Martin Bergesio - 2022 - Buenos Aires, Argentina.</p>
             </div>
             <nav>
-                <Item img={about} title="about me" route="#aboutme" />
-                <Item img={techs} title="technologies" route="#technologies" />
+                <Item img={about} title="sobre mi" route="#aboutme" />
+                <Item img={techs} title="technologías" route="#technologies" />
                 <Item img={portfolio} title="portfolio" route="#portfolio" />
                 <Item img={github} title="github" route="https://github.com/ambergesio" target="_blank"/>
                 <Item img={linkedin} title="Linkedin" route="https://www.linkedin.com/in/abel-martin-bergesio-42819820a/" target="_blank"/>
-                <Item img={contact} title="Contact" route="#contact" />
+                <Item img={contact} title="Contacto" route="#contact" />
             </nav>
         </div>
     </footer>

@@ -1,3 +1,9 @@
+code {
+    font-size: 1rem;
+    font-family: 'Inter';
+    font-weight: 200;
+}
+
 .main {
     width: 100vw;
     display: flex;
@@ -57,8 +63,8 @@ article {
 }
 
 .subtitle {
-    font-family: 'Roboto';
-    font-weight: 600;
+    font-family: 'Inter';
+    font-weight: 700;
     font-size: 3.7rem;
     letter-spacing: -2px;
     text-align: left;
@@ -78,6 +84,53 @@ article {
     }
     @media only screen and (max-width: 756px) {
         font-size: 2.3rem;
+    }
+}
+
+.proyect_subtitle {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 2.9rem;;
+    letter-spacing: -2px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    
+    background: linear-gradient(48deg, rgb(46, 189, 255) 0%, rgb(25, 136, 255) 35%, rgb(183, 39, 255) 75%, rgb(218, 0, 234) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    transition: all .3s ease-in-out;
+
+    @media only screen and (max-width: 756px) {
+        font-size: 2rem;
+    }
+}
+
+.section_subtitle {
+    margin-top: 1rem;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    letter-spacing: -2px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    
+    background: linear-gradient(48deg, rgb(0, 132, 255) 0%, rgb(53, 201, 255) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    transition: all .3s ease-in-out;
+
+    @media only screen and (max-width: 756px) {
+        font-size: 2rem;
     }
 }
 
@@ -175,16 +228,77 @@ article {
 }
 
 .tech_card {
-    margin-bottom: 4rem;
+    margin: 3rem;
+    width: 800px;
+
     display: flex;
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
+
     background-color: white;
     border-radius: 8px;
+
+    @media only screen and (max-width: 1024px) {
+        width: 650px;
+    }
+    @media only screen and (max-width: 768px) {
+        margin: 1rem;
+        width: 350px;
+    }
 }
+
+
 .techs {
     padding: 1rem;
     height: 90px;
     width: auto;
+}
+
+.proyect {
+    display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 2rem;
+}
+
+.proyect_block {
+    padding: .6rem;
+    
+    border: solid 1px rgb(156, 156, 156);
+    border-radius: 12px;
+
+    display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        &:hover {
+            background-color: rgb(62, 62, 62);
+        }
+        transition: all .3s;
+}
+
+.project_icon {
+    width: 30px;
+    height: auto;
+}
+
+.linkproyecto {
+    font-family: "Inter";
+    font-size: .9rem;
+    color: white;
+    text-decoration: none;
+
+    display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: .8rem;
+
+    &:hover {
+        color: white;
+    }
 }

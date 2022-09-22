@@ -1,13 +1,68 @@
+import { useState, useRef } from 'react';
+import config from '../../config';
+
 import palette from '../../images/assets/palette.svg';
 import arrow from '../../images/assets/w_arrow.svg';
 import call from '../../images/articles/call.png';
+import sent from '../../images/articles/sent.png';
+import fail from '../../images/articles/fail.png';
 
 import './style.scss';
 
+
 const Contact = () => {
+
+    const inputEmail = useRef('');
+    const inputMessage = useRef('');
+
+    const [ serverResponse, setServerResponse] = useState('');
+    const [ modal, setModal ] = useState(false);
+    const [ sended, setSended ] = useState(false);
+    const [ resError, setResError ] = useState(false);
+
+
+
+    const sendMessage = (e) => {
+        e.preventDefault();
+        const email = inputEmail.current.value;
+        const message = inputMessage.current.value;
+        const data = {email, message}
+        fetch(`${config.backendpath}/contactme`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(res => {
+            if(res.error) {
+                setServerResponse(res.message);
+                setModal(true);
+                setResError(true);
+                return;
+            };
+            setServerResponse(res.message);
+            setModal(true);
+            setSended(true);
+            setResError(false);
+            inputEmail.current.value = '';
+            inputMessage.current.value = '';
+        })
+    }
     return (
         <>
         <div className="contact" id="contact">
+            <div className={modal ? "message_pop_up_on" : "message_pop_up_off"}>
+                <div className="modal">
+                <div className="close_modal" onClick={() => {setModal(false);setSended(false);}}></div>
+                <div className="serverResponse">
+                    <img className="response_illustration" src={resError ? fail : sent} alt="respuesta" />
+                    <h2>{serverResponse.split('-')[0]}</h2>
+                    <p>{serverResponse.split('-')[1]}</p>
+                </div>
+                </div>
+            </div>
             <div className="contact_container">
 
                 <div className="vertical_line"></div>
@@ -18,16 +73,17 @@ const Contact = () => {
                             <div className="palette_title">
                                 <img className="palette" src={palette} alt="#" />
                                 <img className="arrow" src={arrow} alt="#" />
-                                <p className="contact_subtitle">Contact me</p>
-                                <img className="title_ilustration" src={call} alt="#" />
+                                <p className="contact_subtitle">Contactame</p>
+                                <img className="title_ilustration" src={call} alt="contactame" />
                             </div>
                         </div>
 
                         <div className="contact_card">
                             <code>
-                                If you have any questions, want to meet me or just wanna chat, <b className="hilight">drop me a line!</b>
+                                Querés preguntarme algo, contratarme o simplemente charlar?,
+                                <b className="hilight"> mandame un mensaje!</b>
                                 <p>
-                                    I'll reply very quickly!
+                                    Prometo contestarte rápido! 🚀
                                 </p>
                             </code>
                         </div>
@@ -38,17 +94,38 @@ const Contact = () => {
                                 <div className="yellow ball"></div>
                                 <div className="green ball"></div>
                             </div>
-                            <form className="message">
-                                <input type="email" name="email" required placeholder="your email here"></input>
-                                <textarea name="message" rows="10" required placeholder="your message here..."></textarea>
-                                <button className="submit" type="submit">send message</button>
+                            <form className="message" onSubmit={sendMessage}>
+                                <input
+                                    ref={inputEmail}
+                                    type="email"
+                                    name="email"
+                                    required
+                                    placeholder="tu mail aquí"
+                                >
+                                </input>
+
+                                <textarea
+                                    ref={inputMessage}
+                                    name="message"
+                                    rows="10"
+                                    required
+                                    minLength={10}
+                                    maxLength={2000}
+                                    placeholder="tu mensaje por acá..."
+                                >
+                                </textarea>
+
+                                <button
+                                    className={sended ? "success_submit" : "submit"}
+                                    type="submit">
+                                    {sended ? 'Listo!' : 'enviar'}
+                                </button>
                             </form>
                         </div>
-            
                     </article>
-
                 </div>
             </div>
+            {console.log('render')}
         </div>
         </>
     );

@@ -20,7 +20,7 @@ const Contact = () => {
     const [ sended, setSended ] = useState(false);
     const [ resError, setResError ] = useState(false);
 
-
+    console.log(`${config.backendpath}/contactme`)
 
     const sendMessage = (e) => {
         e.preventDefault();

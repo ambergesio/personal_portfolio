@@ -4,29 +4,36 @@ import config from '../../config';
 import palette from '../../images/assets/palette.svg';
 import arrow from '../../images/assets/w_arrow.svg';
 import call from '../../images/articles/call.png';
-import sent from '../../images/articles/sent.png';
-import fail from '../../images/articles/fail.png';
+
+//imagenes del modal
+import loader from '../../images/assets/loader.svg'
+import sent from '../../images/assets/sent.png';
+import fail from '../../images/assets/fail.png';
 
 import './style.scss';
 
 
 const Contact = () => {
 
+
     const inputEmail = useRef('');
     const inputMessage = useRef('');
 
+
     const [ serverResponse, setServerResponse] = useState('');
     const [ modal, setModal ] = useState(false);
+    const [ modalImage, setModalImage ] = useState('');
     const [ sended, setSended ] = useState(false);
-    const [ resError, setResError ] = useState(false);
 
-    console.log(`${config.backendpath}/contactme`)
 
     const sendMessage = (e) => {
         e.preventDefault();
         const email = inputEmail.current.value;
         const message = inputMessage.current.value;
-        const data = {email, message}
+        const data = {email, message};
+        setModal(true);
+        setServerResponse('Enviando mensage-aguarda un momento');
+        setModalImage(loader);
         fetch(`${config.backendpath}/contactme`, {
             method: 'POST',
             headers: {
@@ -38,14 +45,14 @@ const Contact = () => {
         .then(res => {
             if(res.error) {
                 setServerResponse(res.message);
+                setModalImage(fail);
                 setModal(true);
-                setResError(true);
                 return;
             };
             setServerResponse(res.message);
+            setModalImage(sent);
             setModal(true);
             setSended(true);
-            setResError(false);
             inputEmail.current.value = '';
             inputMessage.current.value = '';
         })
@@ -57,7 +64,7 @@ const Contact = () => {
                 <div className="modal">
                 <div className="close_modal" onClick={() => {setModal(false);setSended(false);}}></div>
                 <div className="serverResponse">
-                    <img className="response_illustration" src={resError ? fail : sent} alt="respuesta" />
+                    <img className="response_illustration" src={modalImage} alt="respuesta" />
                     <h2>{serverResponse.split('-')[0]}</h2>
                     <p>{serverResponse.split('-')[1]}</p>
                 </div>

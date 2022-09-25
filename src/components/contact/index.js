@@ -32,7 +32,7 @@ const Contact = () => {
         const message = inputMessage.current.value;
         const data = {email, message};
         setModal(true);
-        setServerResponse('Enviando mensage-aguarda un momento');
+        setServerResponse('Enviando mensaje-aguarda un momento');
         setModalImage(loader);
         fetch(`${config.backendpath}/contactme`, {
             method: 'POST',

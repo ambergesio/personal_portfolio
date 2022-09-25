@@ -1,6 +1,9 @@
 import React from 'react';
 import palette from '../../images/assets/palette.svg';
 import arrow from '../../images/assets/arrow.svg';
+
+import mununuras from '../../images/proyects/mununuras.jpg';
+import globe from '../../images/assets/globe.svg';
 import emoji from '../../images/articles/success.png';
 import github from '../../images/nav/github.svg';
 
@@ -24,6 +27,7 @@ const Portfolio = () => {
                 <div className="green ball"></div>
             </div>
             <div className="proyect_subtitle">Mununuras e-commerce</div>
+            <img src={mununuras} alt="mununuras e-commerce"/>
             <code>
                 Este proyecto es una tienda virtual para un emprendimiento familiar de juguetes tejidos al crochet para bebés y niños.
             </code>
@@ -33,13 +37,18 @@ const Portfolio = () => {
             <div className="proyect">
                 <div className="proyect_block">
                     <a className="linkproyecto" href="https://mununuras.up.railway.app" rel="noreferrer" target="_blank">
-                    ver tienda online
+                    <img className="project_icon" src={globe} alt="mununuras github" />
+                    <p>
+                        ver tienda online
+                    </p>
                     </a>
                 </div>
                 <div className="proyect_block">
                     <a className="linkproyecto" href="https://github.com/ambergesio/mununuras-e-shop" rel="noreferrer" target="_blank">
                         <img className="project_icon" src={github} alt="mununuras github" />
-                        <p>github repo</p>
+                        <p>
+                            github repo
+                        </p>
                     </a>
                 </div>
             </div>

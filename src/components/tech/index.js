@@ -57,7 +57,7 @@ const Tech = () => {
                 Éstas son algunas de las tecnologías que manejo:
             </code>
         </div>
-        <div className="tech_card">
+        <div className="card tech_card">
             <img className="techs" src={html} alt="html5" title="html5" />
             <img className="techs" src={css} alt="css3" title="css3" />
             <img className="techs" src={js} alt="javascript" title="javascript" />

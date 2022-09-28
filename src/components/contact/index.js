@@ -80,12 +80,12 @@ const Contact = () => {
                             <div className="palette_title">
                                 <img className="palette" src={palette} alt="#" />
                                 <img className="arrow" src={arrow} alt="#" />
-                                <p className="contact_subtitle">Contactame</p>
+                                <p className="subtitle contact_subtitle">Contactame</p>
                                 <img className="title_ilustration" src={call} alt="contactame" />
                             </div>
                         </div>
 
-                        <div className="contact_card">
+                        <div className="card contact_card">
                             <code>
                                 Querés preguntarme algo, contratarme o simplemente charlar?,
                                 <b className="hilight"> mandame un mensaje!</b>
@@ -95,7 +95,7 @@ const Contact = () => {
                             </code>
                         </div>
 
-                        <div className="form_card">
+                        <div className="card form_card">
                             <div className="balls">
                                 <div className="red ball"></div>
                                 <div className="yellow ball"></div>

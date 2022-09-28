@@ -213,6 +213,10 @@ nav {
         font-size: 2.5rem;
         text-align: center;
     }
+    @media only screen and (max-width: 350px) {
+        font-size: 2rem;
+        text-align: center;
+    }
 }
 
 .lastName {
@@ -233,6 +237,10 @@ nav {
         font-size: 3.2rem;
         text-align: center;
     }
+    @media only screen and (max-width: 350px) {
+        font-size: 2.3rem;
+        text-align: center;
+    }
 }
 
 
@@ -246,8 +254,11 @@ nav {
     width: 300px;
     background: linear-gradient(48deg, rgb(218, 0, 234) 0%, rgb(183, 39, 255) 36%, rgb(25, 136, 255) 75%, rgb(45, 188, 255) 100%);
     border-radius: 14px;
-
     transition: all .3s ease-in-out;
+
+    @media only screen and (max-width: 350px) {
+        width: 240px;
+    }
 }
 
 
@@ -261,6 +272,10 @@ nav {
     width: 298px;
     border-radius: 14px;
     background: linear-gradient(145deg,#490a5e 0%,#081332 50%,#002999 100%);
+
+    @media only screen and (max-width: 350px) {
+        width: 236px;
+    }
 }
 
 
@@ -269,6 +284,10 @@ nav {
     font-family: 'Roboto';
     font-weight: 400;
     color: white;
+
+    @media only screen and (max-width: 350px) {
+        font-size: .8rem;
+    }
 }
 
 

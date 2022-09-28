@@ -31,7 +31,7 @@ const Header = () => {
                 <div onClick={ () => {setOpen(!open)}} className={!open ? "menuButton" : "menuButton on"}>
                     <div className="menu_hamb"></div>
                 </div>
-                <div className={!open ? "mobile_nav closed" : "mobile_nav open"}>
+                <div className={!open ? "mobile_nav closed" : "mobile_nav open"} onClick={() => setOpen(false)}>
                     <Item img={about} title="sobre mi" route="#aboutme" />
                     <Item img={techs} title="tecnologías" route="#technologies" />
                     <Item img={portfolio} title="portfolio" route="#portfolio" />

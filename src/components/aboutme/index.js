@@ -24,7 +24,7 @@ const About = () => {
                 <code>
                     <p>
                         Profesional del <b className="hilight">diseño gráfico </b>
-                        con mas de 20 años de experiencia y <b className="hilight">
+                        con más de 20 años de experiencia y <b className="hilight">
                         desarrollador javascript fullstack MERN</b> ((M)ongoDB/(M)ySql, (E)xpress, (R)eact/next, (N)ode.)
                     </p>
                 </code>
@@ -40,14 +40,14 @@ const About = () => {
                     </p>
                     <p>
                         Actualmente me encargo del diseño de las infografías para la revista "Gaceta Marinera"
-                        ademas de otras tareas, tales como animaciones en After Effects, diseños y desarrollos para la web 
-                        y colaboraciones para distintas áres de la Armada.
+                        además de otras tareas, tales como animaciones en After Effects, diseños y desarrollos para la web 
+                        y colaboraciones para distintas áreas de la Armada.
                     </p>
                 </code>
                 <div className="section_subtitle">Dirección de Cultura</div>
                 <code>
                     Entre 2003 y 2011 trabajé para la<b className="hilight"> Dirección de Cultura de Coronel Rosales </b>
-                    donde me desempeñé como diseñador y desarrollador web encargándome de la cartelera cultural online de dicha dirección (html, css, actionscript, jquery). 
+                    donde me desempeñé como diseñador y desarrollador web encargándome de la cartelera cultural online de dicha dirección (html, css, javascript, jquery). 
                 </code>
                 <div className="section_subtitle">Mis comienzos...</div>
                 <code>

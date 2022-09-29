@@ -70,11 +70,29 @@ const Portfolio = () => {
             </code>
             <div className="proyect_subtitle">Disney Plus</div>
             <code>
-                Estoy terminando un clon del sitio de Disney plus desarrollado con <b className="hilight">Next.js, Node/Express, Sass y Mysql.</b>
+                Me encuentro desarrollando un clon del sitio de Disney plus con <b className="hilight">Next.js, Node/Express, Sass y Mysql.</b>
             </code>
             <code>
                 Login y registro de usuario. Películas y series con sus personajes.
             </code>
+            <div className="proyect">
+                <div className="proyect_block">
+                    <a className="linkproyecto" href="https://github.com/ambergesio/disney-plus-frontend" rel="noreferrer" target="_blank">
+                        <img className="project_icon" src={github} alt="disney plus front-end github" />
+                        <p>
+                            github frontend repo
+                        </p>
+                    </a>
+                </div>
+                <div className="proyect_block">
+                    <a className="linkproyecto" href="https://github.com/ambergesio/disney-plus-backend" rel="noreferrer" target="_blank">
+                        <img className="project_icon" src={github} alt="disney plus back-end github" />
+                        <p>
+                            github backend repo
+                        </p>
+                    </a>
+                </div>
+            </div>
         </div>
 
         <div className="card">

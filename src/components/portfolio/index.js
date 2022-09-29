@@ -6,6 +6,10 @@ import mununuras from '../../images/proyects/mununuras.jpg';
 import globe from '../../images/assets/globe.svg';
 import emoji from '../../images/articles/success.png';
 import github from '../../images/nav/github.svg';
+import Twitter from '../csslogos/twitter';
+import Youtube from '../csslogos/youtube';
+import Tiktok from '../csslogos/tiktok';
+import Twitch from '../csslogos/twitch';
 
 const Portfolio = () => {
     return (
@@ -64,13 +68,33 @@ const Portfolio = () => {
             <code>
                 <b className="hilight">Coming soon...</b>
             </code>
-            <div className="proyect_subtitle">Disney Plus clone</div>
+            <div className="proyect_subtitle">Disney Plus</div>
             <code>
-                Clone del sitio de Disney plus desarrollado con <b className="hilight">Next.js, Node/Express, Sass y Mysql.</b>
+                Estoy terminando un clon del sitio de Disney plus desarrollado con <b className="hilight">Next.js, Node/Express, Sass y Mysql.</b>
             </code>
             <code>
                 Login y registro de usuario. Películas y series con sus personajes.
             </code>
+        </div>
+
+        <div className="card">
+            <div className="balls">
+                <div className="red ball"></div>
+                <div className="yellow ball"></div>
+                <div className="green ball"></div>
+            </div>
+            <div className="proyect_subtitle">Dibujando con css</div>
+            <code>
+                Una de las cosas que más me divierte es dibujar con <b className="hilight">css</b>. Replicar logos es una de las mejores maneras que encuentro de combinar diseño y código además de mantener las neuronas activas!.
+            </code>
+            <div className="logos">
+                <Twitter />
+                <Youtube />
+            </div>
+            <div className="logos">
+                <Twitch />
+                <Tiktok />
+            </div>
         </div>
 
     </article>

@@ -312,3 +312,13 @@ article {
         color: white;
     }
 }
+
+
+.logos {
+    padding: 1rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}

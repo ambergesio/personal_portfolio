@@ -132,7 +132,6 @@ const Contact = () => {
                     </article>
                 </div>
             </div>
-            {console.log('render')}
         </div>
         </>
     );

@@ -12,6 +12,7 @@ import mongo from '../../images/techs/mongo.svg';
 import mysql from '../../images/techs/mysql.svg';
 import next from '../../images/techs/next.svg';
 import sass from '../../images/techs/sass.svg';
+import git from '../../images/techs/git.svg';
 
 const Tech = () => {
     return (
@@ -63,10 +64,11 @@ const Tech = () => {
             <img className="techs" src={js} alt="javascript" title="javascript" />
             <img className="techs" src={reactimg} alt="React.js" title="React.js" />
             <img className="techs" src={node} alt="Node.js" title="Node.js" />
+            <img className="techs" src={sass} alt="Sass" title="Sass" />
             <img className="techs" src={mongo} alt="Mongo db" title="Mongo db" />
             <img className="techs" src={mysql} alt="Mysql" title="MySql" />
             <img className="techs" src={next} alt="Next.js" title="Next.js" />
-            <img className="techs" src={sass} alt="Sass" title="Sass" />
+            <img className="techs" src={git} alt="Git" title="Git" />
         </div>
     </article>
     );

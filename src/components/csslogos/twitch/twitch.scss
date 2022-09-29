@@ -1,0 +1,65 @@
+.twitch {
+    background-color: #9146FF;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.icon {
+    position: relative;
+    height: 100px;
+    width: 104px;
+    top: 40px;
+    left: 43px;
+    background-color: rgb(0, 0, 0);
+    clip-path: polygon(22% 0%, 100% 0%, 100% 60%, 62% 100%, 0% 100%, 0% 22%);
+}
+
+.icon_point {
+    position: relative;
+    width: 22px;
+    height: 22px;
+    top: 40px;
+    left: 70px;
+    background-color: rgb(0, 0, 0);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+}
+
+.face {
+    position: relative;
+    height: 64px;
+    width: 68px;
+    top: -73px;
+    left: 70px;
+    background-color: rgb(255, 255, 255);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 74%, 74% 100%, 0% 100%);
+}
+
+.face::before {
+    position: absolute;
+    content: '';
+    inset: 16px 0 0 24px;
+    width: 8px;
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+}
+
+.face::after {
+    position: absolute;
+    content: '';
+    inset: 16px 0 0 48px;
+    width: 8px;
+    height: 25px;
+    background-color: rgb(0, 0, 0);
+}
+
+.face_point {
+    position: relative;
+    content: '';
+    width: 14px;
+    height: 14px;
+    top: -74px;
+    left: 90px;
+    background-color: rgb(255, 255, 255);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
+}

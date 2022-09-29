@@ -1,0 +1,103 @@
+.content {
+    display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+}
+.logo {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    background-color: rgb(39, 147, 255);
+    border-radius: 50%;
+}
+.head {
+    position: absolute;
+    top: 66px;
+    left: 118px;
+    background-color: rgb(255, 255, 255);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.head::before {
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: 4px;
+    height: 30px;
+    width: 65px;
+    border-bottom: solid 12px rgb(255, 255, 255);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+    rotate: -4deg;
+    clip-path: polygon(20% 65%, 30% 66%, 55% 67%, 70% 63%, 88% 60%, 100% 50%, 100% 100%, 20% 100%);
+}
+.head::after {
+    position: absolute;
+    content: '';
+    inset: -17px 0 0 0;
+    height: 30px;
+    width: 65px;
+    border-bottom: solid 12px rgb(255, 255, 255);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+    rotate: -12deg;
+    clip-path: polygon(20% 65%, 30% 66%, 55% 67%, 70% 63%, 88% 60%, 100% 50%, 100% 100%, 20% 100%);
+}
+.body {
+    position: absolute;
+    inset: 62px 0 0 40px;
+    width: 140px;
+    height: 110px;
+    border-bottom: solid 36px rgb(255, 255, 255);
+    border-top: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+    rotate: -40deg;
+    clip-path: polygon(0% 50%, 100% 60%, 100% 100%, 0% 100%);
+}
+.wing1 {
+    position: absolute;
+    inset: 96px 0 0 67px;
+    width: 80px;
+    height: 58px;
+    border-bottom: solid 24px rgb(255, 255, 255);
+    border-top: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+    rotate: -10deg;
+    clip-path: polygon(0% 49%, 100% 50%, 100% 100%, 0% 100%);
+}
+.wing2 {
+    position: absolute;
+    inset: 72px 0 0 59px;
+    width: 84px;
+    height: 64px;
+    border-bottom: solid 24px rgb(255, 255, 255);
+    border-top: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+    rotate: 2deg;
+    clip-path: polygon(0% 49%, 100% 50%, 100% 100%, 0% 100%);
+}
+.wing3 {
+    position: absolute;
+    inset: 40px 0 0 60px;
+    width: 83px;
+    height: 84px;
+    border-bottom: solid 28px rgb(255, 255, 255);
+    border-top: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-radius: 50%;
+    rotate: 20deg;
+    clip-path: polygon(0% 49%, 100% 50%, 100% 100%, 0% 100%);
+}

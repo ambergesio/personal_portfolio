@@ -1,0 +1,37 @@
+.youtube {
+    position: relative;
+    width: 170px;
+    height: 130px;
+    background-color: rgb(255, 0, 0);
+
+    border-top-left-radius: 50% 8%;
+    border-top-right-radius: 50% 8%;
+    border-bottom-right-radius: 50% 8%;
+    border-bottom-left-radius: 50% 8%;
+}
+
+.youtube::before {
+    position: absolute;
+    content: '';
+    top: 9px;
+    right: -14px;
+    width: 198px;
+    height: 112px;
+    background-color:rgb(255, 0, 0);
+
+    border-top-left-radius: 8% 50%;
+    border-top-right-radius: 8% 50%;
+    border-bottom-right-radius: 8% 50%;
+    border-bottom-left-radius: 8% 50%;
+}
+
+.youtube::after {
+    position: absolute;
+    top: 28%;
+    left: 40%;
+    content: '';
+    width: 50px;
+    height: 55px;
+    background-color: #f9f9f9;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+}

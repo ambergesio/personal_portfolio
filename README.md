@@ -7,4 +7,4 @@ yarn create react-app
 ---
 ## Check it out in Vercel.
 
-You can preview my portfolio [deployed in vercel](https://personal-portfolio-ten-fawn.vercel.app).
+You can preview my portfolio [deployed in vercel](https://abelmartinbergesio.vercel.app).

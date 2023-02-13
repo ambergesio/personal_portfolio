@@ -165,11 +165,12 @@ nav {
     flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
+
     transition: all .3s ease-in-out;
     
     @media only screen and (max-width: 1024px) {
-            flex-direction: column-reverse;
-            transition: all .3s ease-in-out;
+        flex-direction: column-reverse;
+        transition: all .3s ease-in-out;
     }
 }
 
@@ -207,9 +208,9 @@ nav {
     background: linear-gradient(48deg, rgb(45, 188, 255) 0%, rgb(25, 136, 255) 36%, rgb(183, 39, 255) 75%, rgb(218, 0, 234) 100%);
     background-clip: text;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
 
     transition: all .3s ease-in-out;
 
@@ -270,7 +271,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
     position: relative;
     height: 48px;
     width: 298px;

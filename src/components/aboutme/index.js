@@ -25,7 +25,7 @@ const About = () => {
                     <p>
                         Profesional del <b className="hilight">diseño gráfico </b>
                         con más de 20 años de experiencia y <b className="hilight">
-                        desarrollador javascript fullstack MERN</b> ((M)ongoDB/(M)ySql, (E)xpress, (R)eact/next, (N)ode.)
+                        desarrollador MERN</b> ((M)ongoDB/(M)ySql, (E)xpress, (R)eact/next, (N)ode.)
                     </p>
                 </code>
                 <div className="section_subtitle">Armada Argentina</div>
